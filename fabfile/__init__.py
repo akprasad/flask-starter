@@ -63,7 +63,7 @@ def init_project(name):
     This does not rename the top-level folder (``flask-starter``).
 
     If ``name`` doesn't conflict with any other terms, you can run this
-    command again with no ill effects. When run this way, the comamnd
+    command again with no ill effects. When run this way, the command
     will replace all instances of the old name with ``name``.
 
     :param name: the new project name
