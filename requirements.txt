@@ -1,3 +1,4 @@
+fabric
 flask
 flask-admin
 flask-assets

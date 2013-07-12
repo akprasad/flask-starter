@@ -1,6 +1,7 @@
 # flask-starter
 
-Starter code, boilerplate, skeleton -- whatever you want to call it.
+Starter code, boilerplate, skeleton -- whatever you want to call it. Batteries included.
+Best for large projects.
 
 ## Overview
 A blueprint `bp` is at `starter/bp` and contains modules like the following:
@@ -21,3 +22,32 @@ These are the extensions I use the most:
 - [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/) for database management
 - [Flask-Uploads](http://pythonhosted.org/Flask-Uploads/) for managing file uploads
 - [Flask-WTF](http://pythonhosted.org/Flask-WTF/) for forms
+
+
+## Quickstart
+
+```
+git clone git@github.com:akprasad/flask-starter.git
+sudo pip install -r requirements.txt
+fab init_project:<name>
+```
+
+## Commands
+
+Rename the project to `name`:
+
+```
+fab init_project:name
+```
+
+Start the server:
+
+```
+fab server
+```
+
+Create a blueprint `name`:
+
+```
+fab blueprint:name
+```
