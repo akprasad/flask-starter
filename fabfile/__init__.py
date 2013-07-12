@@ -12,6 +12,8 @@ def dump_to_file(filename, data):
 def blueprint(name):
     """Create a blueprint."""
     local('mkdir starter/{0}'.format(name))
+    local('mkdir starter/templates/{0}'.format(name))
+    local('touch starter/templates/{0}/index.html'.format(name))
     local('touch starter/{0}/__init__.py'.format(name))
 
     forms_data = """
