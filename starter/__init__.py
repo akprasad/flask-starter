@@ -27,7 +27,7 @@ security = Security(app, datastore)
 # Endpoints and blueprints
 import views
 
-blueprints = ['auth']
+blueprints = []
 for bp in blueprints:
     m = importlib.import_module('starter.%s.views' % bp)
     for name in dir(m):
