@@ -26,7 +26,7 @@ def blueprint(name):
     views_data = """
     from flask import Blueprint, render_template
 
-    bp = Blueprint('{0}', __name__)
+    bp = Blueprint('{0}', __name__, url_prefix='/{0}')
 
     @bp.route('/')
     def index():
