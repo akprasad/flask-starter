@@ -28,6 +28,7 @@ These are the extensions I use the most:
 
 ```
 git clone git@github.com:akprasad/flask-starter.git
+cd flask-starter
 sudo pip install -r requirements.txt
 fab init_project:<name>
 ```
