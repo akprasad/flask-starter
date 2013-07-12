@@ -24,6 +24,12 @@ datastore = SQLAlchemyUserDatastore(db, User, Role)
 security = Security(app, datastore)
 
 
+# Debug toolbar
+if app.config['DEBUG']:
+    from flask.ext.debugtoolbar import DebugToolbarExtension as DTE
+    toolbar = DTE(app)
+
+
 # Endpoints and blueprints
 import views
 

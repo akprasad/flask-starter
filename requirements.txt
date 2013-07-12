@@ -2,6 +2,7 @@ fabric
 flask
 flask-admin
 flask-assets
+flask-debugtoolbar
 flask-restless
 flask-security
 flask-sqlalchemy

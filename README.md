@@ -17,6 +17,7 @@ These are the extensions I use the most:
 
 - [Flask-Admin](http://flask-admin.readthedocs.org/en/latest/) for basic admin functionality
 - [Flask-Assets](http://elsdoerfer.name/docs/flask-assets/) for compiling and managing assets
+- [Flask-DebugToolbar](http://flask-debugtoolbar.readthedocs.org/) for debugging and profiling
 - [Flask-Restless](http://flask-restless.readthedocs.org/)
 - [Flask-Security](http://pythonhosted.org/Flask-Security/) for all-in-one authentication stuff
 - [Flask-SQLAlchemy](http://pythonhosted.org/Flask-SQLAlchemy/) for database management
