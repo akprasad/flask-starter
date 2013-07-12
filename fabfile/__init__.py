@@ -45,10 +45,11 @@ def blueprint(name):
 
     bp = Blueprint('{0}', __name__, url_prefix='/{0}')
 
+
     @bp.route('/')
     def index():
         return render_template('{0}/index.html')
-    """
+    """.format(name)
 
     dump_to_file(forms_data, 'starter/{0}/forms.py'.format(name))
     dump_to_file(models_data, 'starter/{0}/models.py'.format(name))
