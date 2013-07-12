@@ -18,8 +18,13 @@ assets.directory = app.config['ASSETS_DEST']
 less = Bundle('less/base.less', filters='less', output='gen/style.css')
 assets.register('all-css', less)
 
+
 # Database
 db = SQLAlchemy(app)
+
+
+# Admin
+import admin
 
 
 # Security
