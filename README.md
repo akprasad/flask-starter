@@ -34,7 +34,12 @@ sudo pip install -r requirements.txt
 fab init_project:<name>
 ```
 
-## Commands
+## Sample commands
+See the full list of available commands:
+
+```
+fab --list
+```
 
 Rename the project to `name`:
 
