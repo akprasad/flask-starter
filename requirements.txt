@@ -1,0 +1,8 @@
+flask
+flask-admin
+flask-assets
+flask-restless
+flask-security
+flask-sqlalchemy
+flask-uploads
+flask-wtf
