@@ -39,5 +39,14 @@ def blueprint(name):
 
 
 @task
+def init_project(name):
+    command = """mv starter {0};
+        find . -name "*.py" -print0 |
+        xargs -0 sed -i s/starter/{0}/g
+        """.format(name)
+    local(command)
+
+
+@task
 def server():
     local('python runserver.py')
