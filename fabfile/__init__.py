@@ -21,11 +21,13 @@ def dump_to_file(data, filename):
 
 @task
 def blueprint(name):
-    """Create a blueprint and some common modules:
+    """Create a blueprint and some common modules.
 
-    - ``forms.py`` for forms
-    - ``models.py`` for models
-    - ``views.py`` for views
+    Modules include:
+    - ``forms.py`` for forms.
+    - ``models.py`` for models.
+    - ``views.py`` for views. This creates a blueprint and routes an
+      index view.
 
     In addition, this function creates an index template at
     ``starter/templates/<name>/index.html``.
