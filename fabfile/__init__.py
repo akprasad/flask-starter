@@ -114,3 +114,7 @@ def shell():
     ))
 
     code.interact(banner, local=context)
+
+
+# Namespaces
+import auth
