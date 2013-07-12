@@ -1,5 +1,11 @@
+import code
 import textwrap
 from fabric.api import *
+
+
+#: The name of the Flask project. When `init_project` is run, this
+#: variable will be updated to the appropriate value.
+PROJECT_NAME = 'starter'
 
 
 def dump_to_file(data, filename):
@@ -78,3 +84,31 @@ def init_project(name):
 @task
 def server():
     local('python runserver.py')
+
+
+@task
+def shell():
+    """Create an interactive shell with some useful locals.
+
+    Locals include:
+    - ``app``, the application instance
+    - ``db``, the Flask-SQLAlchemy database instance
+    - all of the models that subclass `db.Model`.
+    """
+
+    # Banner, which is displayed at the beginning of the shell session
+    banner = """
+    {1}~~~~~~
+    {0} shell
+    {1}~~~~~~
+    """.format(PROJECT_NAME, '~' * len(PROJECT_NAME))
+
+    # Locals, which are injected into the shell contetx
+    from starter import app, db
+    context = db.Model._decl_class_registry.copy()
+    context.update(dict(
+        app=app,
+        db=db
+    ))
+
+    code.interact(banner, local=context)
