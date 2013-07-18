@@ -118,3 +118,12 @@ def shell():
 
 # Namespaces
 import auth
+
+
+# Production-specific commands. These should be stored in
+# ``production/fabfile.py``. ``production`` is in ``.gitignore``, so
+# it's safe to write sensitive data anywhere in that folder.
+try:
+    from production.fabfile import *
+except ImportError:
+    pass

@@ -12,9 +12,9 @@ layout described in the Flask documentation. All static assets are in
 ### Blueprints layout
 A blueprint `bp` is at `starter/bp` and contains modules like the following:
 
-- `forms` for forms
-- `models` for various models
-- `views` for view functions
+- `forms.py` for forms
+- `models.py` for various models
+- `views.py` for view functions
 
 Blueprint templates are in `starter/templates/bp` and blueprint assets are in
 `starter/static/bp`.
@@ -26,7 +26,7 @@ I added basic support for some common extensions:
 - [Flask-Admin](http://flask-admin.readthedocs.org/en/latest/) for basic admin
   functionality.
 - [Flask-Assets](http://elsdoerfer.name/docs/flask-assets/) for compiling and
-  managing assets. Generated assets are stored in `/starter/static/gen`.
+  managing assets. Generated assets are stored in `starter/static/gen`.
 - [Flask-DebugToolbar](http://flask-debugtoolbar.readthedocs.org/) for debugging
   and profiling. If `app.config['DEBUG'] == False` the extension isn't imported
   at all.
